@@ -1,6 +1,6 @@
 # Descrição
 
-Projeto com jQuery e Bootstrap4 com um formulário e validações dos campos do mesmo.
+Projeto com jQuery, Axios e Bootstrap4 com um formulário e validações dos campos do mesmo.
 
 ## Uso
 
