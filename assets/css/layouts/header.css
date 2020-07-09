@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  height: 60px;
+  padding: 20px 0 0 60px;
+  background: #444;
+  width: 100%;
+  color: white;
+}
+
+.header__brand__name {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 15px 20px 15px;
+  background: #fff;
+  margin: 0 0 20px 0;
+}
+
+.required {
+  color: red;
+}
+
+

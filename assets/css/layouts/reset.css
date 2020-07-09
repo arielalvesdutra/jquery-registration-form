@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #eeeeee;
+}
+
+input, select, textarea {
+  background: rgb(250, 250, 250) !important; 
+}

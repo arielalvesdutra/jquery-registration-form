@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro</title>
+
+  <link href="assets/css/libs/bootstrap4/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/layouts/reset.css" rel="stylesheet" />
+  <link href="assets/css/layouts/header.css" rel="stylesheet" />
+  <link href="assets/css/layouts/main.css" rel="stylesheet" />
+  <link href="assets/css/containers/registration-form.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header class="header">
+    <span class="header__brand__name">
+      Site
+    </span>
+  </header>
+  <main class="main col-12 col-lg-10 col-xl-8">
+
+    <section class="registration-form" id="registration-form">
+      <h1>Formulário de cadastro</h1>
+      <p>Faça o seu cadastro abaixo.</p>
+
+      <!-- Form -->
+      <form id="registration-form__form">
+
+        <div id="registration-form__form__success"></div>
+        <!-- Error messages -->
+        <div id="registration-form__form__alerts"></div>
+        <!-- Error messages end -->
+
+        <!-- General data -->
+        <div>
+          <h2>Dados gerais</h2>
+
+          <div class="form-group">
+            <label for="">Nome completo <span class="required">*</span></label>
+            <input type="text" name="name" id="registration-form__form__name" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="">E-mail <span class="required">*</span></label>
+            <input type="email" name="email" id="registration-form__form__email" class="form-control">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group mr-2">
+              <label for="">Celular <span class="required">*</span></label>
+              <input type="text" name="cellnumber" id="registration-form__form__cellnumber" class="form-control">
+            </div>
+
+            <div class="form-group mr-2">
+              <label for="">CPF <span class="required">*</span></label>
+              <input type="text" name="cpf" id="registration-form__form__cpf" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="">Data de nascimento <span class="required">*</span></label>
+              <input type="date" name="birthdate" id="registration-form__form__birthdate" class="form-control">
+            </div>
+          </div>
+        </div>
+        <!-- General data End -->
+
+        <hr>
+
+        <!-- Address -->
+        <div>
+          <h2>Endereço</h2>
+
+          <div class="form-group">
+            <label for="registration-form__form__address_zipcode">
+              CEP <span class="required">*</span>
+            </label>
+            <input id="registration-form__form__address_zipcode" type="text" name="zipcode"
+              class="form-control col-12 col-sm-4" maxlength="9">
+          </div>
+
+          <div class="form-group">
+            <label for="">
+              Logradouro <span class="required">*</span>
+            </label>
+            <input type="text" id="registration-form__form__address" class="form-control">
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-group col-12 col-sm-8">
+              <label for="">
+                Complemento
+              </label>
+              <input type="text" class="form-control" name="address_complement"
+                id="registration-form__form__address_complement">
+            </div>
+
+            <div class="form-group col-4">
+              <label for="">
+                Numero <span class="required">*</span>
+              </label>
+              <input type="number" name="address_number" id="registration-form__form__address_number"
+                class="form-control">
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <label for="">
+              Bairro <span class="required">*</span>
+            </label>
+            <input name="district" id="registration-form__form__district" class="form-control" />
+          </div>
+
+          <div class="form-group">
+            <label for="">
+              Cidade <span class="required">*</span>
+            </label>
+            <input name="city" id="registration-form__form__city" class="form-control" />
+          </div>
+
+          <div class="form-group">
+            <label for="">UF <span class="required">*</span></label>
+            <input name="state" id="registration-form__form__state" class="form-control" />
+          </div>
+        </div>
+        <!-- Address end-->
+
+        <hr>
+
+        <!-- Description (bio) -->
+        <div>
+          <h2>Descrição</h2>
+          <div class="form-group">
+            <label for="">Descrição (Bio) <span class="required">*</span></label>
+            <textarea name="description" class="form-control" id="registration-form__form__description" cols="30"
+              rows="4"></textarea>
+          </div>
+        </div>
+        <!-- Description (bio) end -->
+
+        <div class="form-group">
+          <button class="btn btn-success">Cadastrar</button>
+        </div>
+
+      </form>
+      <!-- Form end -->
+
+    </section>
+  </main>
+
+  <script src="assets/js/libs/jquery3/jquery.min.js"></script>
+  <script src="assets/js/libs/jquery-inputmask/jquery-inputmask.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="assets/js/libs/bootstrap4/bootstrap.min.js"></script>
+  <script src="assets/js/containers/registration-form.js"></script>
+</body>
+
+</html>
